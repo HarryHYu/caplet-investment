@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # Council Chair Decision Memo — Team Caplet (brainstorming input, not submission text)
 
 **Date:** 2026-09-27 · **Chair's recomputation script:** `/tmp/claude-0/-home-user-caplet-investment/8c147b18-bf89-5749-b72d-4751bfb03bef/scratchpad/council/chair/settle.py`

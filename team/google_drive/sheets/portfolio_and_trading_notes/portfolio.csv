@@ -1,0 +1,39 @@
+,Team Caplet WInS portfolio,,,,,,,,,,,,,
+,"Laura's plan on 2 Jan 2028, after both deposits, scaled to WInS's $300,000 starting cash. This is the book we trade: it matches the locked IPS (Book L was the alternative).",,,,,,,,,,,,,
+,Blue = input you can change. Green = pulled from another tab. Black = formula. Units held and cash update from the Trade Log tab.,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,Key numbers,,,,,,,,,,,,,
+,Portfolio value,Cash,Return since start,Trades used,Trades left,Commissions paid,Trades outside the plan,,,,,,,
+,"$300,000","$300,000",-,-,200,-,-,,,,,,,
+,,,,,,,,,,,,,,
+,Plan split,,,,WInS rules,,,,,,,,,
+,Payment ladder,65.9%,Share of Laura's money on 2 Jan 2028,,Starting cash ($),"$300,000",Session Rules,,,,,,,
+,Facility floor,24.3%,25.3% in the plan; 1 point kept as WInS cash,,"Commission, stock or ETF ($)",$25,Session Rules,,,,,,,
+,Stock fund,8.7%,Share of Laura's money on 2 Jan 2028,,"Commission, Treasury bond ($)",$10,Session Rules,,,,,,,
+,Cash,1.1%,For commissions and rounding,,Trade cap,200,Session Rules,,,,,,,
+,,,,,Position limit per security,200%,200% stocks/ETFs; 100% bonds,,,,,,,
+,,,,,Trade note limit (characters),300,WInS note box,,,,,,,
+,,,,,WInS username,[removed],Must match roster and IPS,,,,,,,
+,,,,,,,,,,,,,,
+,Holdings,,,,,,,,,,,,,
+,Holding,Job,Type,Target weight,Target ($),Price,Target units,Units held,Market value ($),Actual weight,Drift vs target,Status,"Type into WInS (shares; bonds in $1,000 units)",Order tonight
+,IBTM,Jan 2033 payment + facility floor,ETF,32.6%,"$97,680",$21.69,"4,503",-,-,-,(32.6%),Listed in WInS; price from 2 Oct close,"4,503",10
+,IBTO,Jan 2034 payment,ETF,7.8%,"$23,478",$22.92,"1,024",-,-,-,(7.8%),Listed in WInS; price from 2 Oct close,"1,024",9
+,IBTP,Jan 2035 payment,ETF,7.4%,"$22,252",$23.98,927,-,-,-,(7.4%),Listed in WInS; price from 2 Oct close,927,8
+,IBTQ,Jan 2036 payment,ETF,7.0%,"$21,063",$23.56,894,-,-,-,(7.0%),Listed in WInS; price from 2 Oct close,894,7
+,IBTR,Jan 2037 payment,ETF,6.6%,"$19,933",$23.36,853,-,-,-,(6.6%),Order ticket prices it (checked 5 Oct),853,6
+,T 4.750% 15-Feb-2037,Jan 2038 payment,Treasury bond,6.6%,"$19,779",97.122,"20,000",-,-,-,(6.6%),Price checked 5 Oct (-10bp),20,5
+,T 4.500% 15-May-2038,Jan 2039 payment,Treasury bond,6.2%,"$18,545",94.205,"20,000",-,-,-,(6.2%),Price checked 5 Oct (-10bp),20,4
+,T 4.375% 15-Nov-2039,Jan 2040 payment,Treasury bond,5.6%,"$16,907",92.248,"18,000",-,-,-,(5.6%),Price checked 5 Oct (-1bp),18,3
+,T 4.250% 15-Nov-2040,Jan 2041 payment,Treasury bond,5.3%,"$15,865",89.889,"18,000",-,-,-,(5.3%),Price checked 5 Oct (+1bp),18,2
+,T 3.125% 15-Nov-2041,Jan 2042 payment,Treasury bond,5.0%,"$15,098",76.695,"20,000",-,-,-,(5.0%),Price checked 5 Oct (+6bp),20,1
+,VT,Growth: world stock fund,ETF,8.7%,"$26,100",$159.13,164,-,-,-,(8.7%),Listed in WInS; buy after the bonds fill,164,11
+,Cash,Commissions and rounding,Cash,1.1%,"$3,300",,,,"$300,000",100.0%,98.9%,"Keep at least $1,000",,
+,Total,,,100.0%,"$300,000",,,,"$300,000",100.0%,,,,
+,,,,,,,,,,,,,,
+,"Prices: WInS order screens, ETFs at the 2 Oct close, bonds as of 5 Oct 01:18 ET (clean + accrued, in Book L). Refresh before ordering.",,,,,,,,,,,,,
+,"Cash expected after all 11 orders, incl. accrued interest and commissions ($)","$2,955",,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,"IBTM split: one WInS holding, two jobs",,,,,,,,,,,,,
+,For the Jan 2033 payment (shares),1142,Set aside first: the payment comes before the facility,,,,,,,,,,,
+,For the facility floor (shares),"3,361",Income from these shares stays with the floor,,,,,,,,,,,

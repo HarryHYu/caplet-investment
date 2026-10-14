@@ -1,5 +1,7 @@
 # The Wharton-IC Competition Playbook V2
 **Target**: Team Caplet — Season Roadmap (Sept 15 – Dec 4, 2026)  
+> **Update 2026-10-14:** timeline and Phase 7-8 corrected to the official 2026-27 dates. WInS facts: $300,000 virtual cash; $25 per stock/ETF trade, $10 per Treasury bond trade; max 200 trades; stocks, any ETF on WInS and US Treasury bonds on WInS are allowed; no required sector count or allocation. There is no official approved-securities CSV to ingest. See COMPETITION.md.
+
 **Execution**: Strict Alignment with Verified Wharton Milestones.
 
 ---
@@ -7,14 +9,14 @@
 ## 1. Master Competition Timeline
 
 ```
-SEPT 15            SEPT 28             OCT 09             NOV 06             DEC 04
-   │                  │                  │                  │                  │
-   ├── Materials      ├── WInS Trading   ├── Official       ├── Investment     ├── WInS Simulator
-   │   Released       │   Begins         │   Roster Due     │   Policy         │   Closes
-   │                  │                  │                  │   Statement Due  │
-   └── Private Case   └── Live Trading   └── Finalize Team  └── Submit IPS     └── Final Report &
-       Ingested           Sim Starts         Roles              Deliverable        Trading Notes Due
+SEPT 15      SEPT 28        OCT 09       OCT 23         NOV 06              NOV 09          DEC 04
+   │            │              │            │              │                   │               │
+   ├ Materials  ├ Official     ├ Roster     ├ Trading      ├ IPS due;          ├ Final Report  ├ Final Report +
+   │ released   │ trading      │ due        │ Notes        │ TRADING ENDS,     │ instructions  │ school
+   │ (practice  │ begins       │ (locked)   │ Analysis due │ WInS portfolio    │ released      │ documentation
+   │ 15-25 Sep) │              │            │              │ frozen            │               │ letter due
 ```
+All deadlines 5:00 pm ET. WInS does not trade after 6 Nov; nothing about WInS or Trading Notes is due on 4 Dec.
 
 ---
 
@@ -104,23 +106,23 @@ SEPT 15            SEPT 28             OCT 09             NOV 06             DEC
    wharton-ic journal add --type "MISTAKE_IDENTIFIED" --title "..." ...
    ```
 
-### Phase 7: Investment Policy Statement (IPS) Submission (Due November 6, 2026)
+### Phase 7: Investment Policy Statement (IPS) Submission (Due November 6, 2026, 5:00 pm ET)
 1. Export current evidence pack:
    ```bash
    wharton-ic report evidence-pack
    ```
 2. Write IPS narrative in `report/student_authored/IPS.md`.
 3. Submit official IPS deliverable on SurveyMonkey Apply.
+4. **Trading ends at the IPS deadline and the WInS portfolio is frozen the same day.** Any last trades must be placed before 6 Nov, 5:00 pm ET.
 
-### Phase 8: Final Report & Trading Notes Submission (Due December 4, 2026)
-1. WInS trading closes at 4:00 PM EST on December 4.
-2. Compile complete Report Evidence Pack:
+(The Trading Notes Analysis, three notes matching executed WInS trades, was due separately on 23 Oct 2026.)
+
+### Phase 8: Final Report Submission (Due December 4, 2026, 5:00 pm ET)
+1. Final Report instructions are released 9 Nov 2026; follow them over anything below.
+2. No trading happens in this phase: the WInS portfolio has been frozen since 6 Nov.
+3. Compile complete Report Evidence Pack:
    ```bash
    wharton-ic report evidence-pack
-   ```
-3. Export official Trading Notes deliverable:
-   ```bash
-   wharton-ic journal trading-notes > outputs/report_pack/official_trading_notes.md
    ```
 4. Run Judge Review Council to stress-test draft:
    ```bash
@@ -130,4 +132,4 @@ SEPT 15            SEPT 28             OCT 09             NOV 06             DEC
    ```bash
    wharton-ic report audit-ai
    ```
-6. Format final PDF and submit before the 11:59 PM deadline.
+6. Submit the Final Report PDF and the official school documentation letter (separate file) on SurveyMonkey Apply before 5:00 pm ET on 4 Dec.

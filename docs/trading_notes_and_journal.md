@@ -11,7 +11,7 @@ In the Wharton Global High School Investment Competition, teams that try to writ
 Wharton judges repeatedly highlight that **learning, teamwork, mistake recovery, and strategy evolution** are what distinguish global winning teams from ordinary submissions:
 > *"Teams are evaluated on the quality and articulation of their overall investment strategy and competition experience... Storytelling, decision process, learning, teamwork and strategy development matter."*
 
-The `wharton-ic` Journal subsystem captures the live pulse of Team Caplet as decisions occur between September 28 and December 4, 2026.
+The `wharton-ic` Journal subsystem captures the live pulse of Team Caplet as decisions occur between September 28 and November 6, 2026 (WInS trading ends and the portfolio is frozen at the 6 Nov IPS deadline; the Trading Notes Analysis was due 23 Oct).
 
 ---
 

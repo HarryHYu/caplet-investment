@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # D1 - Rates & fixed income: the dated rung in WInS (M044) and the January 2027 purchase rule (M004)
 
 Agent D1 (Rates & Fixed-Income Analyst), run insight_v1, 2026-09-28. AI brainstorming output for the team:

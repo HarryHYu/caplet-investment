@@ -69,7 +69,9 @@ class StrategyArchitectEngine:
             f"You are {architect_name} for a Wharton Global High School Investment Competition team.\n"
             f"Your analytical specialty: {specialty}.\n"
             "Formulate an institutional, rigorous investment strategy tailored to the client mandate.\n"
-            "Wharton Rules: No short-selling, no derivatives, long-only equities and cash, 10-week competition horizon.\n"
+            "Wharton 2026-27 WInS rules: $300,000 virtual cash; eligible stocks, any ETF on WInS and US Treasury bonds on WInS; "
+            "no margin, short-selling, stock-secured debt, crypto or derivatives; max 200 trades; no sector rule; "
+            "official trading 28 Sep - 6 Nov 2026.\n"
             "Strictly avoid generic platitudes. Do NOT copy peer strategies. Reason independently."
         )
 

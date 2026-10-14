@@ -1,8 +1,11 @@
 # Wharton Global High School Investment Competition 2026-2027
 # Official Private Registered-Team Materials
-# Status: AWAITING_OFFICIAL_MATERIAL (client case ingested; trading rules, approved universe
-# and rubrics still missing, so production stays blocked until they are ingested)
 # Release Date: September 15, 2026 (via SurveyMonkey Apply)
+# Update 2026-10-14: the client case, WInS trading rules and deliverable specs are all known
+# (filled in below). The top-level `status` is deliberately left at AWAITING_OFFICIAL_MATERIAL:
+# it is the production-mode gate in src/wharton_ic/core/config.py (tests/governance test 9
+# expects it closed), and the Final Report requirements are not released until 9 Nov.
+# It does NOT mean the rules below are unknown.
 
 competition_year: "2026-2027"
 status: "AWAITING_OFFICIAL_MATERIAL"
@@ -50,24 +53,38 @@ client_case:
   cash_needs: "None before 2033; then reserve funding plus facility contribution"
   status: "INGESTED_PENDING_HUMAN_VERIFICATION"
 
-# Official Trading & Portfolio Rules (UNKNOWN until official release)
+# Official Trading & Portfolio Rules (verified 2026-10-14; WInS + 6 Oct 2026 Wharton email)
 trading_rules:
-  min_positions: null
+  starting_cash_usd: 300000          # the client's $150k 2028 deposit is not in WInS
+  commission_stock_or_etf_usd: 25
+  commission_treasury_bond_usd: 10
+  max_total_trades: 200
+  max_order_vs_daily_volume: 2.0
+  min_positions: null                # no minimum number of holdings
   max_positions: null
   min_position_weight: null
-  max_position_weight: null
-  max_sector_weight: null
-  cash_drag_min: null
-  cash_drag_max: null
-  min_total_trades: null
-  trading_frequency_rules: null
-  status: "UNKNOWN"
+  max_position_weight_stock_or_etf: 2.00   # 200%: effectively no cap
+  max_position_weight_bonds: 1.00          # 100%: effectively no cap
+  max_sector_weight: null            # no sector rule
+  min_sectors: null                  # no required sector allocation or count
+  cash_interest_rate: 0.0
+  fractional_shares: false
+  min_share_price_usd: 3             # WInS session; public guide says $5
+  banned: ["Margin", "Short selling", "Stock-secured debt", "Crypto", "Derivatives"]
+  practice_window: "2026-09-15 to 2026-09-25"
+  official_trading_start: "2026-09-28"
+  trading_end: "2026-11-06 17:00 ET"   # portfolio frozen at the IPS deadline
+  status: "OFFICIAL_VERIFIED"
 
-# Approved Securities Universe (UNKNOWN until official release)
+# Eligible securities: there is no separate approved list for 2026-27. Eligible = stocks that
+# meet the WInS price minimum, any ETF available on WInS, and US Treasury bonds available on WInS.
+# Per the 6 Oct email this also bounds recommendations for BOTH real contributions (no STRIPS,
+# single zero-coupon Treasuries or direct T-bills).
 approved_securities:
   list_file: null
   count: null
-  status: "UNKNOWN"
+  definition: "Eligible stocks, any ETF on WInS, US Treasury bonds on WInS"
+  status: "NO_SEPARATE_LIST"
 
 # Evaluation criteria and deliverable specifications (official SMApply materials)
 evaluation_rubric:
@@ -117,6 +134,7 @@ deliverables:
     prohibited: ["Graphics", "Charts", "Images", "Attachments", "External links", "Footnotes", "Formal citations"]
     not_expected: ["Final operating-reserve calculations", "Detailed portfolio projections", "Final facility-contribution range", "Draft co-sponsor communication"]
     noncompliance: "Not considered for semifinal selection"
+  team_roster_status: "SUBMITTED_LOCKED"   # submitted by 9 Oct 2026
   final_report:
     deadline: "2026-12-04 17:00 ET"
     instructions_release: "2026-11-09"

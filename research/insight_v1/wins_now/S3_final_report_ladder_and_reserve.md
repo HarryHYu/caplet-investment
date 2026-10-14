@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # Final-Report research: the January 2027 STRIPS ladder and the reserve run-down
 
 Agent S3, insight_v1 run, 2026-09-27. **PROVISIONAL.** The team has not approved the strategy, and Phases B-E may

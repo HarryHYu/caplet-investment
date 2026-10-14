@@ -10,7 +10,7 @@ Status: PLAN, awaiting "I confirm" from Ray. Written 2026-09-30 (Sydney). Branch
   Existing Sheet tabs are read-only; the run only adds new tabs prefixed `RAB `.
 - **Source of truth, in order:** (1) official Wharton docs in `competition/official/2026_27/` and the Drive folder;
   (2) Ray's WInS Session Rules notes (Sheet tab `WInS Notes`); (3) the adopted IPS (Google Doc "IPS Report");
-  (4) this repo. Repo files that contradict (1)-(2) are stale (e.g. `config/competition.yaml` $100k / $0 commission).
+  (4) this repo. Repo files that contradict (1)-(2) are stale (e.g. `config/competition.yaml` $100k / $0 commission; corrected to $300k and $25/$10 commissions on 2026-10-14).
 - **The strategy is adopted, not reopened.** Root-and-Branch: 2027 deposit buys Treasuries dated to the ten $50k
   payments; 2028 deposit buys a floor repaying that deposit by late 2032, rest in a global stock fund; 2031 range =
   floor to floor + half the stock fund; 2033 gift capped at the top. The kit tests and implements it. Any finding

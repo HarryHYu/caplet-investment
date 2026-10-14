@@ -28,3 +28,6 @@ outputs/charts/
 outputs/demo/report_pack/
 outputs/demo/charts/
 decisions/demo/20*/
+
+# Office lock files
+~$*

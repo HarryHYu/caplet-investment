@@ -135,8 +135,8 @@ class PortfolioVisualizer:
     def plot_monte_carlo_cone(
         self,
         mc_results: Dict[str, Any],
-        starting_capital: float = 100000.0,
-        target_capital: float = 109000.0,
+        starting_capital: float = 300000.0,  # 2026-27 WInS virtual cash
+        target_capital: float = 327000.0,  # illustrative 9% hurdle on $300k
         filename: str = "monte_carlo_cone.png"
     ) -> Path:
         """Plots fat-tailed Student-t Monte Carlo forward projection cone."""
@@ -149,7 +149,7 @@ class PortfolioVisualizer:
 
         ax.fill_between(days, p05, p95, color="#1f77b4", alpha=0.20, label="5th–95th Percentile Range")
         ax.plot(days, p50, color="#1f77b4", linewidth=2.5, label=f"Median Path (${mc_results['percentiles_ending_wealth']['p50_median']:,.0f})")
-        ax.axhline(starting_capital, color="#666666", linestyle=":", label="Starting Capital ($100,000)")
+        ax.axhline(starting_capital, color="#666666", linestyle=":", label=f"Starting Capital (${starting_capital:,.0f})")
         ax.axhline(target_capital, color="#2ca02c", linestyle="--", linewidth=1.5, label=f"Illustrative 9% Hurdle (${target_capital:,.0f})")
 
         ax.set_xlabel("Trading Days Forward (1 Year)", fontsize=11, fontweight="bold")

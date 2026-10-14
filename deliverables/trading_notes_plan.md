@@ -1,5 +1,7 @@
 # Trading Notes Analysis: plan and template (due 23 Oct 2026, 5pm ET)
 
+> **Update 2026-10-14:** written before the rules were confirmed. Branch 1 applies; the actual book (IBTM-IBTR, listed T-bonds Feb-2037 to Nov-2041, VT; 11 orders filled 7-8 Oct) replaced the generic Treasury ETF and conviction-stock rows. See COMPETITION.md.
+
 > **Outline only.** Students write the submitted notes. Numbers come from `outputs/laura/tables.md`. Confirm the official format (Q4) before writing.
 
 **Goal:** show that each trade *reflected, tested, or refined* the strategy (case wording). Aim for a few well-argued trades, not many.
@@ -16,6 +18,8 @@
 | Any | A yield move of ≥ 0.2pp | D1/D2 | **Tests:** show the ladder and the liability PV moving together (the hedge working) |
 
 ### Branch 2: stocks only
+*(2026-10-14: not used. WInS allows ETFs and Treasury bonds, so Branch 1 applies; there is no sector-count rule.)*
+
 | Week | Trade | Strategy link |
 |---|---|---|
 | 1 | Core: 10–14 large, diversified stocks across ≥ 8 sectors (~60% of WInS) | D4 core proxy |

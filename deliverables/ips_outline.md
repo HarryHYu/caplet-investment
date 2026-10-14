@@ -1,5 +1,7 @@
 # Investment Policy Statement: section outline (due 6 Nov 2026)
 
+> **Update 2026-10-14:** Q5 (format limits) is answered in `decisions/00_open_questions.md`; WInS is the real ladder (see D7 banner).
+
 > **Bullet outline only.** Students write all prose. Each bullet names its number and its source in `model/` or `decisions/`. Check the length and format limits (Q5).
 
 ## 1. Client summary
@@ -57,6 +59,6 @@
 - No outside funding; beginning-of-year cash flows; taxes excluded (per case).
 
 ## 11. WInS implementation note *(D7)*
-- State clearly what WInS represents: branch 1 (ETFs allowed) or branch 2 (stocks only).
+- State clearly what WInS represents: branch 1 (ETFs allowed) or branch 2 (stocks only). *(2026-10-14: branch 1 applies; ETFs and Treasury bonds are allowed, and WInS holds the real ladder: IBTM-IBTR + listed T-bonds 2037-2041 + VT. Trading ends and the portfolio is frozen at this IPS deadline.)*
 
 ## 12. Risks and limitations *(red team #4)*

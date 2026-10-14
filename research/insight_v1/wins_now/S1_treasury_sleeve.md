@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # S1: Treasury and cash sleeve (WInS hedge, cash proxy, Laura's real ladder)
 
 Agent S1, insight_v1 run, 2026-09-27. **PROVISIONAL week-1 research.** The team has not approved the strategy, and

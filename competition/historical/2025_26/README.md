@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** historical only. For 2026-27 there is no approved list: any ETF on WInS, eligible stocks and US Treasury bonds on WInS are allowed. See COMPETITION.md.
+
 # 2025-26 historical materials (authority: HISTORICAL_ONLY)
 
 - `25-26-WGHIC-Approved-ETF-List.pdf` (+ `.txt` extraction): last season's approved ETF list (100 ETFs), provided by Team Leader Ray on 2026-09-27.

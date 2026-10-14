@@ -10,8 +10,8 @@ from wharton_ic.core.logging import logger
 
 class ApprovedUniverseEngine:
     """
-    Authoritative manager of Wharton-approved securities.
-    Guarantees no investment agent can research or propose a non-approved asset.
+    Manager of the securities universe used by the agents. Without an official CSV it falls back to
+    the illustrative DEMO list in default_universe.py, which is not a Wharton-approved list.
     """
 
     def __init__(self, official_csv_path: Optional[Path] = None):

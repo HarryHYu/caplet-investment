@@ -105,7 +105,7 @@ def rules_status():
     console.print(table)
     priv_rules = registry.list_rules(status=RuleStatus.UNKNOWN)
     if priv_rules:
-        console.print(f"[yellow]Note: {len(priv_rules)} private competition rules are UNKNOWN awaiting Sept 15 release.[/yellow]")
+        console.print(f"[yellow]Note: {len(priv_rules)} rule-registry entries are still marked UNKNOWN; the 2026-27 rules were released 15 Sep (see COMPETITION.md and config/competition.yaml).[/yellow]")
 
 @rules_app.command("list")
 def rules_list(category: Optional[str] = typer.Option(None, "--category", "-c")):
@@ -849,7 +849,7 @@ def run_stress():
     table_replay = Table(title="Historical Stress Crisis Replays")
     table_replay.add_column("Regime", style="bold cyan")
     table_replay.add_column("Simulated Drawdown", justify="right", style="bold red")
-    table_replay.add_column("Trough Capital ($100k start)", justify="right")
+    table_replay.add_column("Trough Capital ($300k start)", justify="right")
     table_replay.add_column("Est. Recovery", justify="right")
 
     for k, v in replays.items():

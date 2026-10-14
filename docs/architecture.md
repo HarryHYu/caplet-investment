@@ -72,7 +72,7 @@ flowchart TD
 ### 2.1 Configuration Layer (`config/`)
 All parameters governing the client mandate, competition trading rules, portfolio risk limits, optimization objectives, and LLM model selections are defined declaratively in version-controlled YAML files:
 - `client_mandate.yaml`: Client background, 10-year horizon, 8-10% return goal, 2% cash yield, values, exclusion sectors, and portfolio roles.
-- `competition.yaml`: Official Wharton rules (10-20 stocks, 2.5% min, 15.0% max weight, 25.0% sector cap, 0.5-10% cash buffer, long-only equity).
+- `competition.yaml`: Official 2026-27 WInS rules (verified 2026-10-14): $300,000 virtual cash; $25 per stock/ETF trade, $10 per Treasury bond trade; max 200 trades; eligible stocks, any ETF on WInS and US Treasury bonds on WInS; no margin, shorting, crypto or derivatives; no sector rule and effectively no position cap. (An earlier version of this line listed 10-20 stocks, 2.5%/15% weights and a 25% sector cap as Wharton rules; those were never official. The optimizer's 2.5%/15% bounds are demo defaults.)
 - `risk.yaml`: Target volatility (14%), maximum drawdown threshold (20%), 95% CVaR limit, and crisis replay definitions.
 - `models.yaml`: Multi-model orchestration routing (Anthropic Claude 3.5 Sonnet, OpenAI GPT-4o, Google Gemini 1.5 Pro, and deterministic mock fallbacks).
 - `portfolio.yaml`: Specification of primary optimizer (`hrp`) and comparative models.

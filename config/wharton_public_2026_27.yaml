@@ -22,10 +22,10 @@ verification_2026_09_27:
     - "Teams of 4-6 students from the same school"
     - "Four required deliverables: Official Team Roster, Trading Notes Analysis, IPS, Comprehensive Final Report"
     - "AI may be used to brainstorm; AI-generated work may not be submitted as your own and must be cited"
-  unverified_public:
-    # Deadlines and deliverables now confirmed from the SMApply Deliverables page (see timeline).
-    - "Starting capital for 2026-27 ($500,000 was confirmed for the 2025-26 season only)"
-    - "Sector minimum equal to team size, 200-trade cap, first trade by 2026-10-10 (third-party sources only)"
+  unverified_public: []
+  # Resolved 2026-10-14 from WInS / official materials: starting capital $300,000; 200-trade cap
+  # confirmed; there is NO sector minimum or sector-count rule (the third-party "sector minimum
+  # equal to team size" claim was wrong). See config/competition.yaml.
 
 timeline:
   # Deadlines corrected 2026-09-27 from the SMApply Deliverables page (higher authority than

@@ -8,24 +8,41 @@
 competition:
   name: "2026-2027 Wharton Global High School Investment Competition"
   simulator_platform: "Wharton Investment Simulator (WInS)"
-  starting_capital_usd: null       # awaiting official WInS rules
+  starting_capital_usd: 300000     # official WInS virtual cash (verified 2026-10-14); the $150k 2028 deposit is NOT in WInS
   base_currency: "USD"
+  cash_interest_rate: 0.0          # 0% interest on uninvested cash
+  fractional_shares: false
 
 # Dates: see config/wharton_public_2026_27.yaml (timeline, deliverables).
+# Practice 15-25 Sep; official trading from 28 Sep; trading ends and the WInS portfolio is frozen
+# at the IPS deadline, 6 Nov 2026 5:00 pm ET. WInS does NOT stay open to 4 Dec.
 
-trading_rules:                     # awaiting official WInS trading rules
-  status: "AWAITING_OFFICIAL_MATERIAL"
-  min_stocks: null
+commission:                        # verified 2026-10-14
+  stock_or_etf_usd_per_trade: 25
+  treasury_bond_usd_per_trade: 10
+
+trading_rules:                     # official WInS trading rules, verified 2026-10-14
+  status: "OFFICIAL_VERIFIED"
+  max_trades: 200
+  max_order_vs_daily_volume: 2.0   # an order may be at most 2x the security's daily volume
+  allowed_instruments: ["Eligible stocks", "Any ETF available on WInS", "US Treasury bonds available on WInS"]
+  banned_instruments: ["Margin", "Short selling", "Stock-secured debt", "Crypto", "Derivatives"]
+  recommendation_scope: "Per the 6 Oct 2026 Wharton email, recommendations for BOTH contributions may use only eligible stocks, ETFs and Treasury bonds available on WInS (so no STRIPS, single zero-coupon Treasuries or direct T-bills)."
+  min_stocks: null                 # no minimum number of holdings
   max_stocks: null
   min_position_weight: null
-  max_position_weight: null
-  max_sector_weight: null
-  min_sectors: null
+  max_position_weight_stock_or_etf: 2.00   # 200% of portfolio value: effectively no cap
+  max_position_weight_bonds: 1.00          # 100%: effectively no cap
+  max_sector_weight: null          # no sector rule
+  min_sectors: null                # no required sector allocation or sector count
   min_cash_balance_pct: null
   max_cash_balance_pct: null
-  allow_short_selling: null
-  allow_options_derivatives: null
-  min_share_price_usd: null
+  allow_short_selling: false
+  allow_margin: false
+  allow_options_derivatives: false
+  allow_crypto: false
+  min_share_price_usd: 3           # WInS session minimum; the public guide says $5
+  min_share_price_usd_public_guide: 5
 
-evaluation_rubric_weights:         # awaiting official rubric
-  status: "AWAITING_OFFICIAL_MATERIAL"
+evaluation_rubric_weights:         # five criteria published without weights (see wharton_private_2026_27.yaml)
+  status: "NOT_PUBLISHED"

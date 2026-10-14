@@ -1,7 +1,18 @@
 # Team Caplet: project memory
 
 Wharton Global High School Investment Competition 2026-27. Keep this file current: update it whenever a fact,
-decision, deadline or open item changes, and commit it with the related change. Last updated: 2026-09-28.
+decision, deadline or open item changes, and commit it with the related change. Last updated: 2026-10-14.
+
+## Current status (2026-10-14) - read this before the older sections below
+- Full rules, dates, formats, portfolio and open items: `COMPETITION.md` (single source of truth). Onboarding: `START_HERE.md`.
+- Roster submitted (locked). All 11 WInS orders filled 7-8 Oct: iBond ladder IBTM/IBTO/IBTP/IBTQ/IBTR + T-bonds
+  Feb-2037, May-2038, Nov-2039, Nov-2040, Nov-2041 + VT 167. 11/200 trades, cash $3,514, ~$301.9k. Plan: hold.
+- 6 Oct Wharton email: Laura's real plan may use only WInS-listed stocks, ETFs and Treasury bonds. STRIPS-based
+  numbers below and in `research/insight_v1/` are superseded (banners added). The floor is IBTM.
+- IPS latest draft = Google Doc "IPS Report" tab "Version 5" (export in `team/google_drive/ips_report/`).
+- Next: TNA due 23 Oct ET (Sat 24 Oct 08:00 AEDT); IPS + trading freeze 6 Nov; Final Report 4 Dec.
+- Only Ray places/cancels WInS orders (7 Oct mis-click incident). Scheduled checks: `ops/routines/`.
+- Team exports in `team/google_drive/` are snapshots; the Google Docs are the live copies.
 
 ## Working rules (from the team leader)
 - Use only exact official Wharton materials and verified sources. No fictional clients, rules, rosters or data.
@@ -50,7 +61,7 @@ TRADING ENDS AND PORTFOLIO LOCKS; strategy frozen) | Final Report instructions N
 documentation Dec 4. Evaluation: Investment Strategy; Client Knowledge; Portfolio Analysis; Articulation of
 Competition Experience; Creativity & Presentation. All three evaluated deliverables are judged together.
 
-## Strategy status (council work in `research/council_2026-09-27/`, AI brainstorming)
+## Strategy status, as of 2026-09-28 (superseded by Current status above) (council work in `research/council_2026-09-27/`, AI brainstorming)
 - Leading option after 2 council rounds: "Lock early". Jan 2027 buy Treasuries matching the ten payments
   ($292k at the official 2026-09-25 curve); shortfall topped up from 2028 deposit (buy long rungs first); all
   risk in the surplus growth sleeve; 2031 range = floor bought in a 2-yr Treasury + upside with stated model
