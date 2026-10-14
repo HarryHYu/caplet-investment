@@ -25,11 +25,12 @@ def project_weights_with_constraints(
     sector_map: Dict[str, str],
     min_weight: float = 0.025,
     max_weight: float = 0.150,
-    max_sector_weight: float = 0.250,
+    max_sector_weight: float = 1.0,  # 2026-27 WInS has no sector rule; 1.0 = no cap (was 0.25)
     cash_buffer: float = 0.020
 ) -> np.ndarray:
     """
-    Projects raw weights onto the Wharton-compliant convex constraint set using CVXPY:
+    Projects raw weights onto a team-chosen convex constraint set using CVXPY
+    (the default bounds are demo choices, not Wharton rules):
     Minimize || w - w_raw ||^2
     Subject to:
       sum(w) = 1.0 - cash_buffer
@@ -89,7 +90,7 @@ class PortfolioOptimizer:
         sector_map: Optional[Dict[str, str]] = None,
         min_weight: float = 0.025,
         max_weight: float = 0.150,
-        max_sector_weight: float = 0.250,
+        max_sector_weight: float = 1.0,  # 2026-27 WInS has no sector rule; 1.0 = no cap (was 0.25)
         cash_buffer: float = 0.020,
         benchmark_returns: Optional[pd.Series] = None
     ):

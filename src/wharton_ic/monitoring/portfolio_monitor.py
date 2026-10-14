@@ -48,7 +48,7 @@ class PortfolioMonitor:
         self,
         target_weights: Dict[str, float],
         sector_map: Dict[str, str],
-        max_sector_weight: float = 0.25,
+        max_sector_weight: float = 1.0,  # 2026-27 WInS has no sector rule; 1.0 = no cap (was 0.25)
         drift_tolerance: float = 0.03,
         drawdown_alert_threshold: float = 0.15,
         target_volatility: float = 0.14

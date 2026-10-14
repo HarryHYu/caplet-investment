@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # D3: Reserve size, composition, and how it changes 2033–2042
 
 **Status:** DECIDED · **Evidence:** `tables.md` → Liability table, Reserve run-off; `results.json` → `grid[*].reserve_cost_2033`
@@ -21,7 +23,7 @@ What should the operating reserve hold, how large will it be in 2033, and how sh
 - **Instruments available now:**
   - iShares iBonds term Treasury ETFs mature and pay out their NAV in the named year; expense ratio 0.07%. The range includes **IBTM (Dec 2032), IBTO (Dec 2033), IBTP (Dec 2034), IBTQ (Dec 2035) and IBTR (Dec 2036)**. A fund maturing in December funds the *January* payment that follows: IBTM → 2033, IBTO → 2034, IBTP → 2035, IBTQ → 2036, IBTR → 2037.
   - Individual Treasury notes/bonds exist for every maturity year to 2042. The later years are covered by older 20- and 30-year bonds.
-  - STRIPS are listed as *prohibited in WInS* on an unofficial rules page (unverified). That limits only the WInS demonstration, not Laura's real portfolio.
+  - ~~STRIPS are listed as *prohibited in WInS* on an unofficial rules page (unverified). That limits only the WInS demonstration, not Laura's real portfolio.~~ *Corrected 2026-10-14:* the 6 Oct Wharton email limits recommendations for **both** contributions to eligible stocks, ETFs and Treasury bonds available on WInS, so STRIPS are out for Laura's real portfolio too.
 - **Cost of using ETFs:** 0.07% a year on an average balance of ~$300k is about $210 a year, or roughly $2k over the life of the ladder. That is negligible.
 
 ## Debate
@@ -57,4 +59,4 @@ Your reserve is ten US government bonds (or bond funds that act like single bond
 - [Cambridge Associates: Liability hedging portfolio](https://www.cambridgeassociates.com/insight/liability-hedging-portfolio/)
 - [US Treasury real yield curve (TIPS 10Y 2.63%)](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value_month=202609)
 
-> ⚠ **Team check:** the ticker-to-year mapping comes from iShares product pages found on 25 Sep 2026 (IBTM, IBTO, IBTP, IBTQ, IBTR). Re-confirm on ishares.com and check the WInS approved list before trading.
+> ⚠ **Team check:** the ticker-to-year mapping comes from iShares product pages found on 25 Sep 2026 (IBTM, IBTO, IBTP, IBTQ, IBTR). Re-confirm on ishares.com and check the WInS approved list before trading. *(2026-10-14: there is no separate approved list; all five trade on WInS and were bought 7-8 Oct.)*

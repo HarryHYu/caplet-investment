@@ -1,4 +1,5 @@
-"""Default verified approved universe representing typical Wharton competition securities."""
+"""Illustrative DEMO stock universe (31 large caps). NOT an official Wharton list: for 2026-27 there is
+no approved list; eligible = stocks meeting the WInS price minimum, any ETF on WInS, US Treasury bonds on WInS."""
 
 from typing import List
 from wharton_ic.schemas.security import SecurityMetadata, AssetType

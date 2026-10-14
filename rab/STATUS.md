@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # RAB Kit status: what exists, what is missing, what the team decides
 
 Completeness critic (WS7), 30 Sep 2026 about 17:30 Sydney, on rab/integration 9840758 (Gate D) plus this commit.

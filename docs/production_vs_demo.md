@@ -74,7 +74,7 @@ wharton-ic rules status
 ```
 
 In production mode:
-- If `config/wharton_private_2026_27.yaml` is still awaiting September 15 materials, any attempt to run a full portfolio optimization halts with:
+- If `config/wharton_private_2026_27.yaml` has `status: AWAITING_OFFICIAL_MATERIAL` (kept deliberately as the production gate even though the 2026-27 rules are now known; see the note in that file), any attempt to run a full portfolio optimization halts with:
   `ProductionMissingMaterialError: Official private competition materials for 2026-2027 have not been ingested.`
 - If an LLM provider is requested without an active API key, the system halts with:
   `CouncilPartialError: ANTHROPIC_API_KEY is not set. Cannot complete council deliberation in production mode.`

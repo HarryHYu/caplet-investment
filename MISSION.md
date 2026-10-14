@@ -52,7 +52,7 @@ You are the team's **analyst and sparring partner**, not its ghostwriter.
 - Trading began 28 Sep 2026 on WInS. **WInS performance "has little to do with the final outcome."**
 - **Rubric (5 categories):** Investment Strategy · Client Knowledge · Portfolio Analysis · Competition Experience · Creativity & Presentation.
 - Judges: Wharton students and Aberdeen Investments professionals. Past judges rewarded "clear thoughtfulness and reasoning behind all the decisions", client values, behavioural finance (client emotions in drawdowns), and the client's total financial picture.
-- **UNVERIFIED (ask the humans; do not guess):** WInS starting cash ($100k vs $500k); whether ETFs or bond ETFs are tradeable; the approved securities list; position/trade limits. Put these in `decisions/00_open_questions.md`.
+- **Resolved 2026-10-14 (was UNVERIFIED):** WInS starting cash is $300,000; stocks, any ETF on WInS and US Treasury bonds on WInS are tradeable; there is no separate approved list; $25 per stock/ETF trade, $10 per Treasury bond trade; max 200 trades; position limits effectively uncapped; no sector rule. Trading ends 6 Nov at the IPS deadline. See `decisions/00_open_questions.md` and COMPETITION.md.
 
 ## 3. Prior research (read first, don't redo)
 
@@ -105,7 +105,7 @@ For each decision below, run **at most 3 rounds**: Advocate → Opponent → Jud
 | D4 | Growth-portfolio design: asset mix, equity approach (broad index core + stock picks?), how many holdings, role of values alignment (identity, education, community, creators, Taiwan/Asia) without compromising the finance |
 | D5 | Facility contribution rule: what % of the post-reserve surplus, and how big a flexibility buffer (and why that number) |
 | D6 | 2031 co-sponsor range: which percentiles, the stated confidence, the protect-the-floor mechanism, and how to explain it honestly |
-| D7 | How the WInS account represents the strategy given the platform constraints (stocks-only vs ETFs allowed: have a plan for both) |
+| D7 | How the WInS account represents the strategy given the platform constraints (stocks-only vs ETFs allowed: have a plan for both). *Resolved 2026-10-14: ETFs and Treasury bonds allowed; WInS holds the real ladder.* |
 | D8 | Stress-test the $150k 2028 contribution arriving late or smaller (case says she "will contribute"; decide whether and how to mention it) |
 
 Each memo `decisions/NN_topic.md` contains, in this order:

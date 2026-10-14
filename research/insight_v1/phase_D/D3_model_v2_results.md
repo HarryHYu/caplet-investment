@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # D3 model v2 results: what each new switch changes
 
 Agent D3 (Quant Modeler), insight_v1 run, Phase D. Written 2026-09-28. This is AI-generated research for Team Caplet:

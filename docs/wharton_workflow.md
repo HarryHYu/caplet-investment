@@ -19,7 +19,8 @@ flowchart LR
 ## Phase 1: Ingest Official Files & Calibrate Client Mandate (Weeks 1–2)
 
 1. **Place Official Competition Files**:
-   When Wharton releases the 2026–27 case study and approved stock list, place them into `competition/official/`:
+   When Wharton releases the 2026–27 case study and approved stock list, place them into `competition/official/`.
+   *(Update 2026-10-14: there is no approved list for 2026-27; eligible = stocks meeting the WInS price minimum, any ETF on WInS and US Treasury bonds on WInS. See COMPETITION.md.)*
    ```bash
    cp ~/Downloads/client_case.pdf competition/official/
    cp ~/Downloads/approved_securities.csv competition/official/
@@ -94,7 +95,7 @@ flowchart LR
    ```bash
    wharton-ic portfolio
    ```
-   *Compares 8 optimization models (HRP, CVaR, Risk Budgeting, Max Sharpe, Min Vol, Equal Weight) with Wharton 15% asset and 25% sector caps.*
+   *Compares 8 optimization models (HRP, CVaR, Risk Budgeting, Max Sharpe, Min Vol, Equal Weight) with the tool's demo 15% asset cap (sector cap now off by default). Wharton sets no sector rule, and its position limit (200% per stock/ETF, 100% bonds) is effectively no cap.*
 
 2. **Walk-Forward Out-of-Sample Backtesting**:
    ```bash
@@ -133,7 +134,7 @@ flowchart LR
    - `05_figure_captions.md`: Academic captions for charts embedded in the Final Report.
    - `06_executive_summary.md`: Verified quantitative brief for student authoring.
 3. **Embed High-Resolution Charts from `outputs/charts/`**:
-   - Figure 1: Asset Allocation & Sector Concentration vs. Wharton Cap.
+   - Figure 1: Asset Allocation & Sector Concentration (Wharton sets no sector cap).
    - Figure 2: Model Comparison (Efficient Frontier & Baselines).
    - Figure 3: Fat-Tailed Monte Carlo Projection Cone.
    - Figure 4: Portfolio Correlation Heatmap.

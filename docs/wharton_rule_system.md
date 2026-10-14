@@ -49,9 +49,13 @@ The initial rule layer is compiled in `config/wharton_public_2026_27.yaml`:
 - **Materials Release Date**: September 15, 2026 (via SurveyMonkey Apply portal)
 - **Competition & WInS Trading Begins**: September 28, 2026
 - **Team Roster Deadline**: October 9, 2026
+- **Trading Notes Analysis Deadline**: October 23, 2026
 - **Investment Policy Statement (IPS) Deadline**: November 6, 2026
-- **WInS Trading Simulator Closes**: December 4, 2026
+- **WInS Trading Ends / Portfolio Frozen**: November 6, 2026 (at the IPS deadline)
+- **Final Report Instructions Released**: November 9, 2026
 - **Final Report & School Documentation Due**: December 4, 2026
+
+All deadlines are 5:00 pm ET. (Corrected 2026-10-14: WInS does not close on 4 Dec, and Trading Notes are not due on 4 Dec.)
 
 ### B. Core Competition Philosophy
 - **Portfolio Returns Do NOT Determine Winner**: Performance on the Wharton Investment Simulator (WInS) has little bearing on the final outcome. Teams are evaluated on the quality, coherence, and articulation of their investment strategy, alignment with client goals, and genuine learning.
@@ -60,12 +64,11 @@ The initial rule layer is compiled in `config/wharton_public_2026_27.yaml`:
 - **Balanced Analysis**: Both qualitative (business moats, governance) and quantitative (forensic accruals, cash flow valuation) analysis are mandatory.
 
 ### C. Required Public Deliverables
-1. Official Team Roster (Due Oct 9, 2026)
-2. School Eligibility Documentation (Due Dec 4, 2026)
+1. Official Team Roster (Due Oct 9, 2026; submitted and locked)
+2. Trading Notes Analysis (Due Oct 23, 2026)
 3. Investment Policy Statement (Due Nov 6, 2026)
-4. Comprehensive Final Report (Due Dec 4, 2026)
-5. Official Trading Notes / Execution Justifications (Due Dec 4, 2026)
-6. WInS Trading Simulator Activity (Sept 28 – Dec 4, 2026)
+4. Comprehensive Final Report (Due Dec 4, 2026), with the School Documentation letter as a separate file
+5. WInS Trading Simulator Activity (official trading Sept 28 – Nov 6, 2026; practice 15-25 Sep)
 
 ### D. Team Composition & WInS Rules
 - 4 to 6 students enrolled in the same secondary school.
@@ -82,14 +85,20 @@ The initial rule layer is compiled in `config/wharton_public_2026_27.yaml`:
 
 ---
 
-## 3. Unknown Private Rules (`AWAITING_OFFICIAL_MATERIAL`)
+## 3. Private Rules (now released; was `AWAITING_OFFICIAL_MATERIAL`)
 
-Until registered-team materials are released on **September 15, 2026**, the following parameters are explicitly registered as `UNKNOWN` with confidence `0.0`:
-- Official 2026 Client Identity and Case Profile
-- WInS Position Minimums and Maximums
-- WInS Sector Concentration Caps
-- Minimum Trade Counts
-- Official Deliverable Rubric Weights
+> **Update 2026-10-14:** the registered-team materials were released on 15 Sep 2026 and the WInS rules are now known. They are:
+- **Virtual cash**: $300,000 (the client's $150,000 2028 deposit is not in WInS).
+- **Commissions**: $25 per stock/ETF trade; $10 per US Treasury bond trade. 0% interest on cash; no fractional shares.
+- **Trade limits**: max 200 trades; each order at most 2x the security's daily volume.
+- **Allowed**: stocks (WInS session minimum price $3; the public guide says $5), any ETF available on WInS, US Treasury bonds available on WInS.
+- **Banned**: margin, short selling, stock-secured debt, crypto, derivatives.
+- **Position limits**: 200% per stock/ETF and 100% for bonds, i.e. effectively no cap.
+- **No required sector allocation or sector count**, and no minimum number of holdings.
+- **Client case**: Laura Gao (see `config/client_mandate.yaml`). Rubric criteria are published without weights.
+- Per the 6 Oct Wharton email, recommendations for both contributions may only use eligible stocks, ETFs and Treasury bonds available on WInS.
+
+The code's rule registry may still list some of these as `UNKNOWN`; treat this section and COMPETITION.md as authoritative.
 
 **Fail-Closed Rule**: Any production process requiring an unreleased official constraint halts with a clear error message. The system will **never** substitute an arbitrary assumption (such as a 25% sector cap or 10-stock minimum) for real Wharton rules.
 

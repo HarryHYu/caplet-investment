@@ -2,6 +2,18 @@ competition_year: 2026-2027
 source: Wharton Global Youth Program / SurveyMonkey Apply
 created_at: '2026-09-19'
 documents:
+- filename: 2026_27_School_Documentation_Template.pdf
+  sha256_hash: 56960d752bbbd6b87a9971dc588fa13c2f7511963831b69ee53ffa4e11eed55c
+  document_type: school_documentation_template
+  source: SurveyMonkey Apply (downloaded by the team to the Knox Wharton 2026 Drive folder, 2026-09-29)
+  received_date: '2026-09-29'
+  competition_year: 2026-2027
+  authority: OFFICIAL_PRIVATE_VERIFIED
+  version: '1.0'
+  parsed: true
+  human_verified: false
+  verified_by: null
+  verification_notes: Added 2026-10-14 for the Final Report school letter; text extraction alongside (.txt).
 - filename: 2026_WGY_Investment_Competition_Guide.pdf
   sha256_hash: 3638e84692ed0d826660a65e89cad0ce7eea8c1907b6a8f00ce02c0d51fb7add
   document_type: competition_guide

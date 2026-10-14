@@ -2,6 +2,8 @@
 
 *Knox team — Wharton Global High School Investment Competition 2026–27. Compiled 24 Sep 2026.*
 
+> **Update 2026-10-14:** the WInS rows below are now verified (official): $300,000 virtual cash; stocks, any ETF on WInS and US Treasury bonds on WInS are tradeable; $25 per stock/ETF trade, $10 per Treasury bond trade; max 200 trades; no sector rule. The 6 Oct Wharton email limits recommendations for both contributions to WInS-listed stocks, ETFs and Treasury bonds, so the reserve is held in WInS (iBonds IBTM-IBTR + listed T-bonds), not on paper. See COMPETITION.md.
+
 ---
 
 ## 1. Bottom line
@@ -24,8 +26,8 @@
 | Top-50 selection | Based on the IPS and Final Report (plus school verification). | Official |
 | Rubric (5 categories) | **Investment Strategy** (clear thesis, disciplined planning across time horizons, diversification, IPS consistency) · **Client Knowledge** (tailored, builds confidence) · **Portfolio Analysis** (quant + qual, reasonable assumptions) · **Competition Experience** (teamwork, reflection) · **Creativity & Presentation** (narrative, data use, original thinking) | Official (SMApply deliverables page) |
 | Trading Notes purpose | "Demonstrate how your team's investment decisions reflected the strategy it developed." | Official |
-| Virtual cash | **$500,000 in 2025–26** (up from $100k). A China-based site (wghs.org.cn) lists $100k for 2026–27. Our `competition.yaml` says $100k. | **Unverified. Check WInS.** |
-| Eligible assets | The wghs.org.cn page says "stocks from the approved list only," with Treasuries/TIPS "recommended but not traded on WInS." Wharton's own strategy page implies stocks only. | **Unverified. Check the Box trading-requirements doc.** |
+| Virtual cash | **$300,000 for 2026–27** (was $500,000 in 2025–26). The client's $150,000 2028 deposit is not in WInS. *(Updated 2026-10-14; the 24 Sep draft listed $100k/$500k as unverified.)* | Official (WInS) |
+| Eligible assets | Stocks (WInS session min price $3; public guide says $5), **any ETF on WInS, and US Treasury bonds on WInS**. Banned: margin, shorting, stock-secured debt, crypto, derivatives. $25 per stock/ETF trade, $10 per Treasury bond trade; max 200 trades; no required sector allocation. *(Updated 2026-10-14; the 24 Sep draft relied on an unofficial "stocks from the approved list only" claim, which was wrong.)* | Official (WInS + 6 Oct email) |
 | Judges | Wharton students + professionals from Aberdeen Investments. Past finals judged by practitioners. | Official |
 | Scale | 6,300+ teams registered, 2,300 final reports from 79 countries in 2025–26. | Official |
 
@@ -35,7 +37,7 @@
 - 2023 (Peter Wang Hjemdahl): the winner (TJHSST) used ESG as a "critical pillar." That case included recurring $5–10k annual grants from Year 5, the closest past analogue to Laura's case.
 - Wharton's guidance: "developing a strategy and sticking with it… is the best approach." Avoid over-trading and panic selling. A vague strategy is not competitive.
 
-**Implication for us:** if WInS is stocks-only, the Treasury reserve cannot be traded. The WInS account then represents the **growth part** only, and the IPS must say so explicitly. The reserve can then be shown on paper as a Treasury ladder (the case asks for its "size and initial asset composition," not trades). If bond ETFs are allowed, we can hold iBonds in WInS to show it.
+**Implication for us (updated 2026-10-14):** WInS allows ETFs and Treasury bonds, and the 6 Oct email limits recommendations to WInS-listed securities, so the Treasury reserve is held and traded in WInS as a ladder (IBTM-IBTR iBonds + listed T-bonds Feb-2037 to Nov-2041). The original 24 Sep text assumed a possible stocks-only WInS with a paper reserve; that branch no longer applies.
 
 ---
 
@@ -117,9 +119,9 @@ Cost of the $500k commitment (ten $50k payments, starts of 2033–2042):
 
 ## 5. Open items to check this week
 
-1. WInS starting cash and eligible securities (read the Box trading-requirements document on SMApply).
-2. Add the **23 Oct Trading Notes Analysis** deadline to `config/wharton_public_2026_27.yaml`.
-3. Download the approved securities list into `competition/official/2026_27/`.
+1. ~~WInS starting cash and eligible securities~~ Done: $300k; stocks, ETFs and Treasury bonds on WInS (2026-10-14).
+2. ~~Add the 23 Oct Trading Notes Analysis deadline~~ Done.
+3. ~~Download the approved securities list~~ Not applicable: there is no separate list for 2026-27; eligibility is whatever WInS lists.
 4. Replace the demo `client_mandate.yaml` with Laura's actual mandate.
 5. Decide as a team between options A, B and C before the IPS draft.
 

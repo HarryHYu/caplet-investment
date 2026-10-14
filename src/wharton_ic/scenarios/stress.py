@@ -21,7 +21,7 @@ class ScenarioStressEngine:
         weights: np.ndarray,
         returns_df: pd.DataFrame,
         sector_map: Optional[Dict[str, str]] = None,
-        starting_capital: float = 100000.0
+        starting_capital: float = 300000.0  # 2026-27 WInS virtual cash
     ):
         self.weights = np.array(weights).flatten()
         self.returns_df = returns_df.copy()

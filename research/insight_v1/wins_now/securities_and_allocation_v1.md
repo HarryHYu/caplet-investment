@@ -1,3 +1,5 @@
+> **Update 2026-10-14:** written before the 6 Oct Wharton email limiting recommendations to WInS-listed stocks, ETFs and Treasury bonds. STRIPS/zero-coupon references are superseded: the real plan uses the WInS ladder (IBTM-IBTR + listed T-bonds) and IBTM as the 2028 floor. See COMPETITION.md.
+
 # WInS ticket v1: orders for options (ii) and (iii), position-limit branches and the trading-notes plan
 
 Agent T1 (Trading-Now editor), insight_v1 run, written 2026-09-28 (before the first U.S. open of the season,

@@ -1,0 +1,24 @@
+Book L: Laura's Treasury Ladder,,,,,,,,,,,
+"Alternative WInS book for the D3 vote. WInS's $300,000 = Laura's 1 Jan 2027 deposit, dollar for dollar: one holding for each $50,000 payment. The stock fund is absent because it is bought with the 2028 deposit, which WInS never receives. Provisional; nothing traded.",,,,,,,,,,,
+"Blue text = input. Green = link to the Portfolio tab. Black = formula. Each holding is sized to be worth $50,000 on its payment date with interest reinvested.",,,,,,,,,,,
+,,,,,,,,,,,
+Inputs,,,Summary,,,,,,,,
+Starting cash ($),"$300,000",,Ladder cost ($),"$291,239",,,,,,,
+Commission per ETF trade ($),$25,,Commissions ($),$175,,,,,,,
+Commission per bond trade ($),$10,,Cash left ($),"$8,586",,,,,,,
+Payment per year ($),"$50,000",,Cash left (% of starting cash),2.9%,,,,,,,
+,,,Trades needed,10,,,,,,,
+,,,,,,,,,,,
+Holdings,,,,,,,,,,,
+Pays Laura on 1 Jan,Holding,Type,Ends or matures,Discount factor (28 Sep curve),Target value today ($),Price (ETF per share; bond clean per $100),Accrued interest per $100 face,"Size (shares, or face $ for bonds)",Cost ($),Weight,Note
+2033,IBTM,ETF,15 Dec 2032,0.729825,"$36,491",$21.69,,"1,683","$36,504",12.2%,iShares iBonds Dec 2032 Term Treasury ETF. Also the building-minimum fund in the current plan
+2034,IBTO,ETF,15 Dec 2033,0.691509,"$34,575",$22.92,,"1,509","$34,586",11.5%,"iBonds Dec 2033. Not IBTN, which is an unrelated company in WInS"
+2035,IBTP,ETF,15 Dec 2034,0.655288,"$32,764",$23.98,,"1,367","$32,781",10.9%,iBonds Dec 2034
+2036,IBTQ,ETF,15 Dec 2035,0.620501,"$31,025",$23.56,,"1,317","$31,029",10.3%,iBonds Dec 2035
+2037,IBTR,ETF,15 Dec 2036,0.586914,"$29,346",$23.36,,"1,257","$29,364",9.8%,iBonds Dec 2036
+2038,T 4.750% 15-Feb-2037,Treasury bond,15 Feb 2037,0.581302,"$29,065",96.484,0.638,"30,000","$29,137",9.7%,WInS price checked against the curve (-8bp). Coupons reinvested
+2039,T 4.500% 15-May-2038,Treasury bond,15 May 2038,0.541306,"$27,065",93.601,0.604,"29,000","$27,319",9.1%,"Used instead of the 4.375% Feb 2038, whose WInS price is stale (about 85bp off)"
+2040,T 4.375% 15-Nov-2039,Treasury bond,15 Nov 2039,0.495540,"$24,777",90.570,1.678,"27,000","$24,907",8.3%,WInS price checked against the curve (+13bp)
+2041,T 4.250% 15-Nov-2040,Treasury bond,15 Nov 2040,0.466558,"$23,328",88.247,1.642,"26,000","$23,371",7.8%,WInS price checked against the curve (+14bp)
+2042,T 3.125% 15-Nov-2041,Treasury bond,15 Nov 2041,0.438835,"$21,942",75.488,1.207,"29,000","$22,242",7.4%,WInS price checked against the curve (+15bp)
+Total,,,,,"$290,379",,,,"$291,239",97.1%,

@@ -51,7 +51,7 @@ class WalkForwardBacktester:
         strategy_method: str = "hrp",
         min_weight: float = 0.025,
         max_weight: float = 0.150,
-        max_sector_weight: float = 0.250
+        max_sector_weight: float = 1.0  # 2026-27 WInS has no sector rule; 1.0 = no cap (was 0.25)
     ) -> Dict[str, Any]:
         """Runs the walk-forward simulation across time."""
         dates = self.returns_df.index

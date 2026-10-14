@@ -30,7 +30,7 @@ Read this file first. Each stage ends with a 5-line summary. The details are in 
 | D4 | **Growth sleeve** = 80% equity / 20% intermediate Treasuries. Equity is a broad index core (~60%) plus 8–12 conviction stocks (~40%). Values show up through engagement and themes, with no concentrated theme bets. |
 | D5 | **Facility contribution** = 80% of the 2033 surplus; keep a 20% flexibility buffer. Projected (base): **$118k / $167k / $230k** (p10/p50/p90). |
 | D6 | **2031 announcement** uses two tiers. Move 70% of the surplus into Treasuries maturing Dec 2032, then say: "At least $X is committed; we expect $L–$H." The committed amount was never breached in any simulated path. On the median path this is $113k committed and $153–174k expected. |
-| D7 | **WInS:** if ETFs are allowed, mirror the full strategy (~65% Treasury ETFs / ~35% growth sleeve). If stocks only, WInS is the equity sleeve and the reserve is a "shadow ladder" tracked in a spreadsheet. |
+| D7 | **WInS:** if ETFs are allowed, mirror the full strategy (~65% Treasury ETFs / ~35% growth sleeve). If stocks only, WInS is the equity sleeve and the reserve is a "shadow ladder" tracked in a spreadsheet. *Resolved 2026-10-14: ETFs and Treasury bonds are allowed in WInS, so the "if ETFs are allowed" branch applies; the stocks-only/shadow-ladder branch is dropped. Actual WInS book (filled 7-8 Oct): iBonds IBTM-IBTR + listed T-bonds 2037-2041 + VT.* |
 | D8 | **2028 contribution:** keep the case's assumption, but show one chart proving A still works if the money is late or smaller. This is a robustness point, not a contradiction of the case. |
 
 ## Stage 4: Red team (done)
