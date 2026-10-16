@@ -1,0 +1,267 @@
+<title>Caplet Overnight Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<style>
+/* Layout: a single memo column with a sticky contents rail on wide screens; tables and the chart scroll inside their own boxes. */
+:root {
+  --bg: #f4f6f3;
+  --surface: #ffffff;
+  --ink: #16201b;
+  --ink-2: #47534d;
+  --ink-3: #66726b;
+  --rule: #d7ddd8;
+  --accent: #1d5c47;
+  --accent-wash: #e4efe9;
+  --code: #edf1ee;
+  --series: #0f7a55;
+  --high: #a8261b;
+  --high-wash: #fbe9e7;
+  --med: #7d5200;
+  --med-wash: #fbf1dc;
+  --low: #2c6537;
+  --low-wash: #e6f2e8;
+  --shadow: 0 6px 20px rgb(22 32 27 / 0.12);
+  --f-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1311; --surface: #151b18; --ink: #e3e9e5; --ink-2: #aeb8b2; --ink-3: #8d9891; --rule: #2a332e;
+    --accent: #7cc9a8; --accent-wash: #1a2822; --code: #1c2420; --series: #2fa878;
+    --high: #ff9a8f; --high-wash: #3a1d1a; --med: #f2c766; --med-wash: #33290f; --low: #8fd6a1; --low-wash: #17291d;
+    --shadow: 0 6px 20px rgb(0 0 0 / 0.45);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1311; --surface: #151b18; --ink: #e3e9e5; --ink-2: #aeb8b2; --ink-3: #8d9891; --rule: #2a332e;
+  --accent: #7cc9a8; --accent-wash: #1a2822; --code: #1c2420; --series: #2fa878;
+  --high: #ff9a8f; --high-wash: #3a1d1a; --med: #f2c766; --med-wash: #33290f; --low: #8fd6a1; --low-wash: #17291d;
+  --shadow: 0 6px 20px rgb(0 0 0 / 0.45);
+  color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
+.page { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 72px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+@media (min-width: 1020px) {
+  .page { grid-template-columns: 210px minmax(0, 1fr); gap: 48px; }
+  .toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; max-height: calc(100vh - 48px); overflow: auto; }
+}
+main { min-width: 0; max-width: 820px; }
+main > p, main li, .dek { max-width: 70ch; }
+
+/* header */
+.masthead { grid-column: 1 / -1; border-bottom: 1px solid var(--rule); padding-bottom: 22px; display: grid; gap: 10px; }
+.eyebrow { font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(30px, 5vw, 44px); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+.dek { font-size: 18px; color: var(--ink-2); margin: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13.5px; color: var(--ink-3); margin: 0; }
+
+/* contents */
+.toc { font-size: 14px; }
+.toc p { margin: 0 0 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
+.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.toc a { display: flex; gap: 10px; align-items: baseline; padding: 5px 8px; border-radius: 6px; color: var(--ink-2); text-decoration: none; }
+.toc a:hover { background: var(--accent-wash); color: var(--ink); }
+.toc a:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.toc .num { font-family: var(--f-mono); font-size: 12px; color: var(--ink-3); min-width: 1.6em; }
+@media (max-width: 1019px) {
+  .toc ol { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
+
+/* body copy */
+h2 { font-family: var(--f-display); font-weight: 700; font-size: 26px; line-height: 1.2; margin: 56px 0 14px; display: flex; gap: 14px; align-items: baseline; text-wrap: balance; scroll-margin-top: 20px; }
+h2 .num { font-family: var(--f-mono); font-weight: 500; font-size: 15px; color: var(--accent); min-width: 1.4em; }
+main > h2:first-child { margin-top: 0; }
+h3 { font-size: 17px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+ul, ol { margin: 0 0 16px; padding-left: 1.3em; display: grid; gap: 8px; }
+li > p { margin: 0; }
+strong { font-weight: 700; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+code { font-family: var(--f-mono); font-size: 0.84em; background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; overflow-wrap: anywhere; }
+em { font-style: italic; }
+
+/* the ranked risks in section 1 */
+ol.risks { list-style: none; padding: 0; counter-reset: risk; gap: 12px; }
+ol.risks > li { counter-increment: risk; position: relative; padding: 14px 16px 14px 3.2em; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; max-width: none; }
+ol.risks > li::before { content: counter(risk); position: absolute; left: 16px; top: 11px; font-family: var(--f-display); font-weight: 700; font-size: 22px; line-height: 1.2; color: var(--high); }
+ol.risks > li:nth-child(n+3)::before { color: var(--med); }
+
+/* severity chips: word plus colour */
+.chip { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; padding: 4px 7px 3px; border-radius: 999px; margin-right: 6px; vertical-align: 1px; }
+.chip.high { color: var(--high); background: var(--high-wash); }
+.chip.med { color: var(--med); background: var(--med-wash); }
+.chip.low { color: var(--low); background: var(--low-wash); }
+
+/* tables */
+.table-wrap { overflow-x: auto; margin: 0 0 18px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; line-height: 1.5; }
+th { text-align: left; font-weight: 700; font-size: 13px; color: var(--ink-2); background: var(--code); padding: 9px 12px; white-space: nowrap; }
+td { padding: 10px 12px; border-top: 1px solid var(--rule); vertical-align: top; min-width: 9em; }
+td:first-child { min-width: 10em; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 0; }
+
+/* chart */
+.viz { margin: 8px 0 22px; padding: 18px 18px 12px; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; }
+.viz figcaption { margin-bottom: 10px; }
+.viz-title { font-weight: 700; font-size: 16px; margin: 0 0 4px; }
+.viz-sub { font-size: 14px; color: var(--ink-2); margin: 0; max-width: 70ch; }
+.viz-plot { position: relative; }
+.viz-plot svg { display: block; width: 100%; height: auto; overflow: visible; }
+.viz-plot svg:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+.viz .grid { stroke: var(--rule); stroke-width: 1; }
+.viz .ref { stroke: var(--ink-2); stroke-width: 1.25; }
+.viz .axis-label { fill: var(--ink-3); font-family: var(--f-body); font-size: 12px; font-variant-numeric: tabular-nums; }
+.viz .ref-label { fill: var(--ink-2); font-family: var(--f-body); font-size: 12px; font-weight: 600; }
+.viz .note-label { fill: var(--ink-2); font-family: var(--f-body); font-size: 12px; }
+.viz .end-label { fill: var(--ink); font-family: var(--f-body); font-size: 13px; font-weight: 700; }
+.viz .line { fill: none; stroke: var(--series); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.viz .dot { fill: var(--series); stroke: var(--surface); stroke-width: 2; }
+.viz .cross { stroke: var(--ink-3); stroke-width: 1; }
+.viz-tip { position: absolute; z-index: 2; pointer-events: none; display: grid; gap: 1px; min-width: 150px; padding: 8px 11px; font-size: 12.5px; color: var(--ink-2); background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; box-shadow: var(--shadow); }
+.viz-tip strong { color: var(--ink); font-size: 15px; font-variant-numeric: tabular-nums; }
+.viz-table { margin-top: 10px; font-size: 14px; }
+.viz-table summary { cursor: pointer; color: var(--accent); font-weight: 600; width: fit-content; }
+.viz-table summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.viz-table .table-wrap { margin-top: 10px; max-height: 320px; overflow: auto; }
+.viz-source { font-size: 12.5px; color: var(--ink-3); margin: 10px 0 0; }
+
+footer { grid-column: 1 / -1; border-top: 1px solid var(--rule); padding-top: 16px; font-size: 13px; color: var(--ink-3); }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <div class="eyebrow">Team Caplet &middot; Wharton Global High School Investment Competition 2026&ndash;27</div>
+    <h1>Overnight review of the repo</h1>
+    <p class="dek">Everything in the repo, read and checked: what is current, what holds up, and what to fix before Friday's first WInS trades.</p>
+    <p class="meta"><span>Claude Code</span><span>30 Sep 2026, written overnight (Sydney)</span><span>Review and research for the team, not submission text</span><span>Nothing was traded, sent, or changed in the repo</span></p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+{{TOC}}
+    </ol>
+  </nav>
+
+  <main>
+{{BODY}}
+  </main>
+
+  <footer>Built from the repo at commit b232000 (main, 30 Sep 2026). Independent checks used the official treasury.gov par curves and the live Wharton FAQ, both fetched 30 Sep 2026. Background reviews: code and tests, privacy across all branches and history, a clean-machine rebuild of the RAB kit, and a stale-content sweep.</footer>
+</div>
+
+<script type="application/json" id="ladder-data">{{DATA}}</script>
+<script>
+(function () {
+  var fig = document.getElementById('ladder-viz');
+  if (!fig) return;
+  var data = JSON.parse(document.getElementById('ladder-data').textContent);
+  var plot = fig.querySelector('.viz-plot');
+  var tip = fig.querySelector('.viz-tip');
+  var NS = 'http://www.w3.org/2000/svg';
+  var geom = null, idx = data.length - 1;
+  function fmt(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
+  function day(iso) { var p = iso.split('-').map(Number); return Date.UTC(p[0], p[1] - 1, p[2]); }
+  function longDate(iso) { return new Date(day(iso)).toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }); }
+  function shortDate(iso) { var d = new Date(day(iso)); return d.getUTCDate() + ' ' + d.toLocaleDateString('en-AU', { month: 'short', timeZone: 'UTC' }); }
+  function el(name, attrs, text) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function render() {
+    var W = Math.max(300, Math.round(plot.clientWidth));
+    var narrow = W < 600, H = narrow ? 250 : 300;
+    var ml = 52, mr = narrow ? 16 : 132, mt = 30, mb = 32;
+    var d0 = day('2026-08-03'), d1 = day('2026-09-29'), y0 = 287500, y1 = 311000;
+    function X(iso) { return ml + (day(iso) - d0) / (d1 - d0) * (W - ml - mr); }
+    function Y(v) { return mt + (y1 - v) / (y1 - y0) * (H - mt - mb); }
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, role: 'img', 'aria-labelledby': 'viz-title viz-desc', tabindex: 0 });
+    [290000, 295000, 305000, 310000].forEach(function (v) {
+      svg.appendChild(el('line', { 'class': 'grid', x1: ml, x2: W - mr, y1: Y(v), y2: Y(v) }));
+      svg.appendChild(el('text', { 'class': 'axis-label', x: ml - 8, y: Y(v) + 4, 'text-anchor': 'end' }, '$' + v / 1000 + 'k'));
+    });
+    svg.appendChild(el('line', { 'class': 'ref', x1: ml, x2: W - mr, y1: Y(300000), y2: Y(300000) }));
+    svg.appendChild(el('text', { 'class': 'axis-label', x: ml - 8, y: Y(300000) + 4, 'text-anchor': 'end' }, '$300k'));
+    svg.appendChild(el('text', { 'class': 'ref-label', x: ml + 6, y: Y(300000) - 7 }, narrow ? 'First deposit, $300,000' : "Laura's first deposit, $300,000"));
+    var ticks = narrow ? ['2026-08-03', '2026-08-31', '2026-09-29'] : ['2026-08-03', '2026-08-17', '2026-08-31', '2026-09-14', '2026-09-29'];
+    ticks.forEach(function (t, i) {
+      var anchor = i === 0 ? 'start' : (i === ticks.length - 1 && narrow ? 'end' : 'middle');
+      svg.appendChild(el('text', { 'class': 'axis-label', x: X(t), y: H - 10, 'text-anchor': anchor }, shortDate(t)));
+    });
+    svg.appendChild(el('polyline', { 'class': 'line', points: data.map(function (d) { return X(d[0]).toFixed(1) + ',' + Y(d[1]).toFixed(1); }).join(' ') }));
+    var d22 = data.filter(function (d) { return d[0] === '2026-09-22'; })[0];
+    svg.appendChild(el('circle', { 'class': 'dot', cx: X(d22[0]), cy: Y(d22[1]), r: 4.5 }));
+    if (!narrow) svg.appendChild(el('text', { 'class': 'note-label', x: X(d22[0]) - 8, y: Y(d22[1]) - 12, 'text-anchor': 'end' }, '22 Sep: ' + fmt(d22[1])));
+    var last = data[data.length - 1];
+    svg.appendChild(el('circle', { 'class': 'dot', cx: X(last[0]), cy: Y(last[1]), r: 4.5 }));
+    if (narrow) {
+      svg.appendChild(el('text', { 'class': 'end-label', x: X(last[0]) - 8, y: Y(last[1]) + 20, 'text-anchor': 'end' }, '29 Sep: ' + fmt(last[1])));
+    } else {
+      svg.appendChild(el('text', { 'class': 'end-label', x: X(last[0]) + 10, y: Y(last[1]) + 4 }, fmt(last[1])));
+      svg.appendChild(el('text', { 'class': 'axis-label', x: X(last[0]) + 10, y: Y(last[1]) + 20 }, '29 Sep'));
+    }
+    var cross = el('line', { 'class': 'cross', x1: 0, x2: 0, y1: mt, y2: H - mb, visibility: 'hidden' });
+    var hdot = el('circle', { 'class': 'dot', r: 4.5, cx: 0, cy: 0, visibility: 'hidden' });
+    svg.appendChild(cross);
+    svg.appendChild(hdot);
+    svg.appendChild(el('rect', { x: ml - 12, y: 0, width: W - ml - mr + 24, height: H, fill: 'transparent' }));
+    var old = plot.querySelector('svg');
+    if (old) plot.replaceChild(svg, old); else plot.insertBefore(svg, plot.firstChild);
+    geom = { svg: svg, cross: cross, hdot: hdot, X: X, Y: Y, W: W };
+    svg.addEventListener('pointermove', function (e) {
+      var r = svg.getBoundingClientRect();
+      show(nearest((e.clientX - r.left) * W / r.width));
+    });
+    svg.addEventListener('pointerleave', hide);
+    svg.addEventListener('focus', function () { show(idx); });
+    svg.addEventListener('blur', hide);
+    svg.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { show(Math.max(0, idx - 1)); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { show(Math.min(data.length - 1, idx + 1)); e.preventDefault(); }
+      if (e.key === 'Escape') hide();
+    });
+  }
+  function nearest(px) {
+    var best = 0, bd = Infinity;
+    data.forEach(function (d, i) { var dx = Math.abs(geom.X(d[0]) - px); if (dx < bd) { bd = dx; best = i; } });
+    return best;
+  }
+  function show(i) {
+    if (!geom) return;
+    idx = i;
+    var d = data[i], x = geom.X(d[0]), y = geom.Y(d[1]);
+    geom.cross.setAttribute('x1', x); geom.cross.setAttribute('x2', x); geom.cross.setAttribute('visibility', 'visible');
+    geom.hdot.setAttribute('cx', x); geom.hdot.setAttribute('cy', y); geom.hdot.setAttribute('visibility', 'visible');
+    while (tip.firstChild) tip.removeChild(tip.firstChild);
+    var a = document.createElement('span'); a.textContent = longDate(d[0]);
+    var b = document.createElement('strong'); b.textContent = fmt(d[1]);
+    var c = document.createElement('span'); c.textContent = (d[1] > 300000 ? 'Over' : 'Under') + ' $300,000 by ' + fmt(Math.abs(d[1] - 300000));
+    var e = document.createElement('span'); e.textContent = '10-year yield ' + d[2].toFixed(2) + '%';
+    tip.appendChild(a); tip.appendChild(b); tip.appendChild(c); tip.appendChild(e);
+    tip.hidden = false;
+    var r = geom.svg.getBoundingClientRect(), s = r.width / geom.W;
+    var tw = tip.offsetWidth, th = tip.offsetHeight, pw = plot.clientWidth;
+    var left = x * s + 14; if (left + tw > pw) left = x * s - tw - 14;
+    tip.style.left = Math.max(0, left) + 'px';
+    tip.style.top = Math.max(0, y * s - th - 10) + 'px';
+  }
+  function hide() {
+    if (!geom) return;
+    geom.cross.setAttribute('visibility', 'hidden');
+    geom.hdot.setAttribute('visibility', 'hidden');
+    tip.hidden = true;
+  }
+  render();
+  var t;
+  window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(render, 120); });
+})();
+</script>
